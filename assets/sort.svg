@@ -1,0 +1,38 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bar {
+        fill: #535C91;
+        stroke: #3DC2EC;
+        stroke-width: 2;
+      }
+      .text {
+        fill: #EEEEEE;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: middle;
+        alignment-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Bars -->
+  <rect x="40" y="250" width="30" height="100" class="bar" />
+  <rect x="80" y="200" width="30" height="150" class="bar" />
+  <rect x="120" y="150" width="30" height="200" class="bar" />
+  <rect x="160" y="50" width="30" height="300" class="bar" />
+  <rect x="200" y="100" width="30" height="250" class="bar" />
+  <rect x="240" y="180" width="30" height="170" class="bar" />
+  <rect x="280" y="220" width="30" height="130" class="bar" />
+  <rect x="320" y="300" width="30" height="50" class="bar" />
+
+  <!-- Text inside bars -->
+  <text x="55" y="330" class="text">1</text>
+  <text x="95" y="330" class="text">2</text>
+  <text x="135" y="330" class="text">3</text>
+  <text x="175" y="330" class="text">4</text>
+  <text x="215" y="330" class="text">5</text>
+  <text x="255" y="330" class="text">6</text>
+  <text x="295" y="330" class="text">7</text>
+  <text x="335" y="330" class="text">8</text>
+</svg>

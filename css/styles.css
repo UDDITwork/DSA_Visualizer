@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+html, body {
+  height: 100%;
+  background-color: #fff;
+  font-family: Nunito;
+  color: #EEEEEE;
+  
+}
+#main {
+  height: 100%;
+  display: grid;
+  grid-row-start: auto;
+  align-items: stretch;
+}
+#header {
+  background-color: #31363F;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+#title {
+  font-size: 27px;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+
+
+.algo-container {
+  flex: 1 1 200px;
+  margin: 20px;
+  background-color: #31363F;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 300px;
+  height:400px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.algo-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 10px 24px rgba(0, 0, 0, 0.19);
+}
+.imageContainer {
+  padding: 20px;
+  background-color: #76ABAE;
+}
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 20px;
+  display: block;
+  padding: 10px 0;
+}
+@media (max-width: 1100px) {
+  .algo-container {
+      flex: 1 1 45%;
+  }
+}
+@media (max-width: 600px) {
+  .algo-container {
+      flex: 1 1 100%;
+  }
+}

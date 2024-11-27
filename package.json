@@ -1,0 +1,13 @@
+{
+    "name": "data_structure_visualizer",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server/server.js"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.15.0",
+        "express": "^4.19.2"
+    }
+}

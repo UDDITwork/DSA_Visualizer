@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Runner</title>
+    <link rel="icon" href="Home/assets/logo.png" type="image/png">
+</head>
+
+<body>
+    <h1>Online Code Runner</h1>
+    <div class="jdoodle-container">
+        <div data-pym-src="https://www.jdoodle.com/embed/v1/efe6a102e99cf760"></div>
+    </div>
+    <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to check and remove the elements after a delay
+            function checkAndRemoveElements() {
+                var stdinArgs = document.getElementById('stdinArgs');
+                var inputArgs = document.getElementById('inputArgs');
+                
+                // Check if the elements exist
+                if (stdinArgs) {
+                    stdinArgs.remove();
+                }
+                
+                if (inputArgs) {
+                    inputArgs.remove();
+                }
+            }
+
+            // Function to observe changes in the DOM and apply the removal after elements are added
+            function observeDOMChanges() {
+                var observer = new MutationObserver(function(mutationsList) {
+                    for(var mutation of mutationsList) {
+                        if (mutation.type === 'childList') {
+                            checkAndRemoveElements();
+                            observer.disconnect();
+                        }
+                    }
+                });
+
+                observer.observe(document.body, { childList: true, subtree: true });
+            }
+
+            // Start observing DOM changes to trigger removal of elements
+            observeDOMChanges();
+
+            // Wait for 5 seconds before forcing removal (in case mutation observer missed it)
+            setTimeout(checkAndRemoveElements, 5000); // 5 seconds delay
+        });
+    </script>
+</body>
+
+</html>

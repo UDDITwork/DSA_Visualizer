@@ -1,0 +1,55 @@
+<svg width="600" height="650" viewBox="0 0 600 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box {
+        fill: #535C91;
+        stroke: #3DC2EC;
+        stroke-width: 2;
+      }
+      .text {
+        fill: #EEEEEE;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: middle;
+        alignment-baseline: middle;
+      }
+      .index {
+        fill: #3DC2EC;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: middle;
+        alignment-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Queue Container -->
+  <rect x="50" y="50" width="500" height="50" fill="none" stroke="#3DC2EC" stroke-width="2"/>
+
+  <!-- Queue Elements -->
+  <rect x="50" y="50" width="50" height="50" class="box"/>
+  <rect x="100" y="50" width="50" height="50" class="box"/>
+  <rect x="150" y="50" width="50" height="50" class="box"/>
+  <rect x="200" y="50" width="50" height="50" class="box"/>
+  <rect x="250" y="50" width="50" height="50" class="box"/>
+  <rect x="300" y="50" width="50" height="50" class="box"/>
+  <rect x="350" y="50" width="50" height="50" class="box"/>
+
+  <!-- Text inside queue elements -->
+  <text x="75" y="75" class="text">A</text>
+  <text x="125" y="75" class="text">B</text>
+  <text x="175" y="75" class="text">C</text>
+  <text x="225" y="75" class="text">D</text>
+  <text x="275" y="75" class="text">E</text>
+  <text x="325" y="75" class="text">F</text>
+  <text x="375" y="75" class="text">G</text>
+
+  <!-- Index labels below elements -->
+  <text x="75" y="115" class="index">0</text>
+  <text x="125" y="115" class="index">1</text>
+  <text x="175" y="115" class="index">2</text>
+  <text x="225" y="115" class="index">3</text>
+  <text x="275" y="115" class="index">4</text>
+  <text x="325" y="115" class="index">5</text>
+  <text x="375" y="115" class="index">6</text>
+</svg>

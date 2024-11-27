@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --background-color: #fff;
+  --header-background-color: #31363F;
+  --text-color: #fff;
+  --highlight-color: #8469fe;
+  --node-color: #ffffff;
+  --end-of-word-node-color: #00911d;
+  --stroke-color: #ff7d12;
+  --line-color: #099b96;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--header-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+#OperationContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.button {
+  width: 80px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #6b4cf0;
+  transform: translateY(-2px);
+}
+
+#InsertNodeField,
+#DeleteNodeField {
+  width: 140px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Canvas {
+  flex: 1;
+  background-color: var(--background-color);
+  display: flex;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+}
+
+.indicator text {
+  font-size: 20px;
+}
+
+svg {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  padding-inline: 30px;
+}
+
+.node circle {
+  fill: var(--node-color);
+  stroke: var(--stroke-color);
+  stroke-width: 1px;
+}
+
+.node text {
+  font-size: 22px;
+  fill: rgb(250, 7, 7);
+}
+
+.endOfWordNode circle {
+  fill: var(--end-of-word-node-color);
+  stroke: var(--node-color);
+  stroke-width: 1px;
+}
+
+.endOfWordNode text {
+  font-size: 23px;
+  fill: black;
+}
+
+.highlightedNode circle {
+  fill: red;
+  stroke: red;
+  stroke-width: 2px;
+}
+
+.highlightedNode text {
+  font-size: 23px;
+  fill: white;
+}
+
+line {
+  stroke: var(--line-color);
+}
+
+.null-node,
+.null-link {
+  visibility: hidden;
+}
+
+text {
+  fill: var(--node-color);
+}
+
+#title {
+  text-align: center;
+  font-size: 27px;
+  color: var(--text-color);
+  padding-top: 20px;
+  font-weight: bold;
+}

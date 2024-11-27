@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bar {
+        fill: #535C91;
+        stroke: #3DC2EC;
+        stroke-width: 2;
+      }
+      .text {
+        fill: #EEEEEE;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: middle;
+        alignment-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Stack Container -->
+  <rect x="160" y="50" width="80" height="300" fill="none" stroke="#3DC2EC" stroke-width="2"/>
+
+  <!-- Stack elements -->
+  <rect x="165" y="250" width="70" height="100" class="bar" />
+  <rect x="165" y="200" width="70" height="50" class="bar" />
+  <rect x="165" y="150" width="70" height="50" class="bar" />
+  <rect x="165" y="50" width="70" height="100" class="bar" />
+
+  <!-- Text inside stack elements -->
+  <text x="200" y="300" class="text">1</text>
+  <text x="200" y="225" class="text">2</text>
+  <text x="200" y="175" class="text">3</text>
+  <text x="200" y="100" class="text">4</text>
+</svg>

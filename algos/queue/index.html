@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Queue Visualization</h1>
+    </header>
+
+    <div class="container">
+        <div class="container-header">
+            <input  type="number" class="text" required>
+            <button class="enqueue">Front</button>
+            <button class="dequeue">Pop</button>
+            <button class="reset">Reset</button>
+        </div>
+
+        <div class="container-body">
+            <div class="queue">
+                <div class="main-queue-bucket"></div>
+            </div>
+
+            <div class="info">
+                <div class="sec1">
+                    <h3>Front of the Queue:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec2">
+                    <h3>Last Added Item:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec3">
+                    <h3>Last Removed Item:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec3">
+                    <h3>Size of the Queue:</h3>
+                    <button class="box">0</button>
+                </div>
+
+                <div class="message-box">
+                    <h2>Message Box</h2>
+                    <div class="message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

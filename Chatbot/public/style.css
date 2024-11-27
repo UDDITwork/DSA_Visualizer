@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #202123;
+    color: #d1d1d1;
+    /* font-size: 18px; */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo button{
+    background-color: #555;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: none;
+    border: none;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202123;
+    padding: 20px;
+    overflow-y: auto;
+
+}
+
+.chatbox {
+    width: 100%;
+    max-width: 800px;
+    /* Example: Limit height to 70% of viewport height */
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /* Change scrollbar appearance */
+    scrollbar-width: thin;
+    /* "auto" or "thin" for modern browsers */
+    scrollbar-color: #888 #202123;
+    /* thumb and track color */
+}
+
+/* Change scrollbar track color */
+.chatbox::-webkit-scrollbar-track {
+    background-color: #202123;
+    /* Set to your desired background color */
+}
+
+/* Change scrollbar thumb color (the draggable part) */
+.chatbox::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Set to your desired thumb color */
+    border-radius: 8px;
+    /* Optional: Rounded corners */
+}
+
+/* Change scrollbar corner (between track and thumb) */
+.chatbox::-webkit-scrollbar-corner {
+    background-color: #202123;
+    /* Set to your desired color */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    /* Ensure it's positioned */
+    z-index: 100;
+    /* Adjust as needed */
+}
+
+.chat-message {
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #444;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #555;
+    align-self: flex-start;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.message-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #202123;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.message-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.message-bar button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+}
