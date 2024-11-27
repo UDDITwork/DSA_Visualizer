@@ -6,106 +6,147 @@
     <title>About - Data Structure Visualization</title>
     <link rel="icon" href="Home/assets/logo.png" type="image/png">
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: #ecf0f1;
+            font-family: "Poppins", sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px;
         }
 
         .container {
-            background: #2c3e50;
+            max-width: 1200px;
+            background: #fff;
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .left {
+            flex: 1;
+            background: #f4f6f8;
             padding: 40px;
-            max-width: 800px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .container h2 {
+        .left h1 {
             font-size: 2.5rem;
-            color: #8e44ad;
+            color: #2c3e50;
             margin-bottom: 20px;
-            text-transform: uppercase;
         }
 
-        .container p {
+        .left p {
             font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
+            color: #555;
+            margin-bottom: 30px;
         }
 
-        .creators {
-            list-style: none;
-            padding: 0;
+        .left button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .left button:hover {
+            background-color: #2980b9;
+        }
+
+        .right {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .right h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .right p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .creator-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             margin-top: 20px;
         }
 
-        .creators li {
-            font-size: 1.1rem;
-            margin: 10px 0;
+        .creator-info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        .creators li::before {
-            content: "▶ ";
-            color: #8e44ad;
+        .creator-info div span {
+            font-weight: 600;
+            color: #2c3e50;
         }
 
         footer {
             margin-top: 20px;
             font-size: 0.9rem;
-            color: #bdc3c7;
-        }
-
-        header {
-            margin-bottom: 20px;
-        }
-
-        .container a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .container a:hover {
-            text-decoration: underline;
-        }
-
-        .highlight {
-            color: #f1c40f;
-            font-weight: 700;
+            color: #888;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h2>About</h2>
-        </header>
-        <p>Welcome to <span class="highlight">Stack Visualizer</span>, your go-to platform for visualizing data structures. Our mission is to provide a comprehensive and interactive learning experience for computer science enthusiasts and students. Through this website, we aim to simplify the complexities of data structures by offering clear and animated visualizations.</p>
-        <p>Whether you are just starting your journey in programming or looking to deepen your understanding of data structures, our visualizer is designed to help you grasp the concepts intuitively. Dive into the world of stacks, queues, linked lists, and more, and see how they work in real-time.</p>
-        <h2>Developed By</h2>
-        <ul class="creators">
-            <li>UddiT</li>
-            <li>Email: 2021umt1791@mnit.ac.in</li>
-            <li>Email: <a href="mailto:udditalerts247@gmail.com">udditalerts247@gmail.com</a></li>
-            <li>Phone: <a href="tel:7456886877">7456886877</a></li>
-            <li>We are currently in <span class="highlight">B-phase</span>, and the service is still pushing new features and better user experience to enable smart learning!</li>
-        </ul>
-        <footer>
-            &copy; 2024 Stack Visualizer. All rights reserved.
-        </footer>
+        <!-- Left Section -->
+        <div class="left">
+            <h1>Visualize Data Structures</h1>
+            <p>
+                Enhance your understanding of algorithms with interactive visualizations of data structures.
+            </p>
+            <button>Explore Now</button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right">
+            <h2>About Stack Visualizer</h2>
+            <p>
+                Our mission is to provide a comprehensive and interactive learning experience for students and enthusiasts. Dive into the world of arrays, linked lists, trees, and more.
+            </p>
+            <h2>Developed By</h2>
+            <div class="creator-info">
+                <div><span>Name:</span> UddiT</div>
+                <div><span>Email:</span> 2021umt1791@mnit.ac.in</div>
+                <div><span>Alternate Email:</span> udditalerts247@gmail.com</div>
+                <div><span>Phone:</span> 7456886877</div>
+            </div>
+            <footer>
+                We are currently in B-phase, pushing new features for smarter learning.
+            </footer>
+        </div>
     </div>
 </body>
 </html>
