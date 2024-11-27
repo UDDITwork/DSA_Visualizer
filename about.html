@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Data Structure Visualization</title>
+    <title>About - Futuristic DSA Visualizer</title>
     <link rel="icon" href="Home/assets/logo.png" type="image/png">
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap");
 
         * {
             margin: 0;
@@ -15,137 +15,190 @@
         }
 
         body {
-            font-family: "Poppins", sans-serif;
-            background: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
+            font-family: "Orbitron", sans-serif;
+            background: radial-gradient(circle, #1c1c1e, #101012);
+            color: #fff;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            height: 100vh;
+            margin: 0;
         }
 
         .container {
             max-width: 1200px;
-            background: #fff;
+            background: rgba(20, 20, 22, 0.9);
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
             overflow: hidden;
-            display: flex;
-            align-items: flex-start;
+            position: relative;
         }
 
-        .left {
-            flex: 1;
-            background: #f4f6f8;
-            padding: 40px;
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, #3498db, transparent, transparent);
+            opacity: 0.1;
+            animation: rotateBG 10s linear infinite;
+        }
+
+        @keyframes rotateBG {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .header {
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .left h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
             margin-bottom: 20px;
         }
 
-        .left p {
+        .header h1 {
+            font-size: 2.5rem;
+            color: #e67e22;
+        }
+
+        .header p {
             font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 30px;
+            color: #bdc3c7;
         }
 
-        .left button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #fff;
-            background-color: #3498db;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .left button:hover {
-            background-color: #2980b9;
-        }
-
-        .right {
-            flex: 1;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .right h2 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .right p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .creator-info {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+        .social-links {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
         }
 
-        .creator-info div {
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
+            border-radius: 50%;
             display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 10px;
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .creator-info div span {
-            font-weight: 600;
-            color: #2c3e50;
+        .social-links a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.6);
         }
 
-        footer {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: #888;
-            text-align: center;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .content-left {
+            max-width: 45%;
+        }
+
+        .content-left h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #2ecc71;
+        }
+
+        .content-left p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+            line-height: 1.8;
+        }
+
+        .content-right {
+            position: relative;
+            width: 45%;
+            height: 300px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #e74c3c, #f1c40f);
+            border-radius: 50%;
+            position: absolute;
+            animation: move 5s infinite ease-in-out;
+        }
+
+        .circle:nth-child(1) {
+            top: 10%;
+            left: 20%;
+            animation-delay: 0.2s;
+        }
+
+        .circle:nth-child(2) {
+            top: 60%;
+            left: 50%;
+            animation-delay: 0.4s;
+        }
+
+        .circle:nth-child(3) {
+            top: 20%;
+            left: 80%;
+            animation-delay: 0.6s;
+        }
+
+        .circle::before {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.6);
+            top: 50%;
+            left: 50%;
+            transform: rotate(45deg);
+        }
+
+        @keyframes move {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(50px, 50px);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Left Section -->
-        <div class="left">
-            <h1>Visualize Data Structures</h1>
-            <p>
-                Enhance your understanding of algorithms with interactive visualizations of data structures.
-            </p>
-            <button>Explore Now</button>
+        <div class="header">
+            <h1>Futuristic DSA Visualizer</h1>
+            <p>Experience the future of learning with AI, ML, and Web3-inspired visualizations.</p>
         </div>
-
-        <!-- Right Section -->
-        <div class="right">
-            <h2>About Stack Visualizer</h2>
-            <p>
-                Our mission is to provide a comprehensive and interactive learning experience for students and enthusiasts. Dive into the world of arrays, linked lists, trees, and more.
-            </p>
-            <h2>Developed By</h2>
-            <div class="creator-info">
-                <div><span>Name:</span> UddiT</div>
-                <div><span>Email:</span> 2021umt1791@mnit.ac.in</div>
-                <div><span>Alternate Email:</span> udditalerts247@gmail.com</div>
-                <div><span>Phone:</span> 7456886877</div>
+        <div class="content">
+            <!-- Left Content -->
+            <div class="content-left">
+                <h2>About</h2>
+                <p>Welcome to Stack Visualizer, your go-to platform for visualizing data structures and algorithms. Explore our advanced features designed to simplify complex ideas with interactive animations.</p>
             </div>
-            <footer>
-                We are currently in B-phase, pushing new features for smarter learning.
-            </footer>
+            <!-- Right Content -->
+            <div class="content-right">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/UDDITwork" target="_blank">G</a>
+            <a href="https://linkedin.com/in/UDDIT" target="_blank">L</a>
+            <a href="https://twitter.com/UDDIT" target="_blank">T</a>
         </div>
     </div>
 </body>
