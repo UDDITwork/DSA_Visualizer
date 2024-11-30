@@ -69,15 +69,14 @@ Contributions are welcome! Please fork the repository and create a pull request 
 5. Create a pull request
 
 ## Preview
-- Click this link to preview the page https://rohitkhot1718.github.io/DSA_Visualizer/
+- Click this link to preview the page https://UDDITwork.github.io/DSA_Visualizer/
 
 ## Developers
 
 Developed by:
-- Rohit Khot
-- Guru K 
-- Venkatesh P Deshpande
-- Susheel Kumar
+Uddit
+2021umt1791@mnit.ac.in
+udditalerts247@gmail.com
 
 
 ## License
@@ -86,4 +85,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For more details, visit the [DSA Visualizer GitHub page](https://github.com/Rohitkhot1718/DSA_Visualizer).
+For more details, visit the [DSA Visualizer GitHub page](https://github.com/UDDITwork/DSA_Visualizer).
