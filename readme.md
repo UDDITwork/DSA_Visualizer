@@ -1,88 +1,94 @@
-# DSA Visualizer
+# DSA Visualizer 🚀📊
 
-DSA Visualizer is a web application that helps visualize various data structures and algorithms. It provides an interactive way for users to understand how different data structures work and how algorithms are executed step-by-step. Additionally, it features a chatbot for text generation and a playground for running and compiling code.
+DSA Visualizer is a web application designed to help users visualize data structures and algorithms interactively. It provides step-by-step execution of algorithms, a chatbot for text generation, and a playground for running and compiling code.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Preview](#preview)
-- [Developers](#developers)
-- [License](#license)
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/Rohitkhot1718/DSA_Visualizer.git
-    ```
-
-2. **Navigate to the project directory:**
-    ```bash
-    cd DSA_Visualizer
-    ```
-
-3. **Install dependencies:**
-    ```bash
-    npm install express @google/generative-ai
-    ```
-    - Open package.json and update dependencies.
-
-4. **API Key:**
-    - Open `server.js` and paste Google Generative AI API Key.
-
-5. **Start the server:**
-    ```bash
-    node ./Chatbot/Server/server.js
-    ```
-    - Run the `server.js` to get response from chatbot
-
-6. **Opening Webpage:**
-    - Open the `form.html` and click the live server or preview the page.
-
-## Usage
-
-1. Interact with the visualizer to explore different data structures and algorithms.
-2. Use the chatbot to generate text and code to get explanations about data structures and algorithms.
-3. Utilize the code playground to write, run, and test code snippets.
-
-## Features
-
-- **Data Structures:** Visualize various data structures such as arrays, linked lists, stacks, queues, trees, graphs, etc.
-- **Algorithms:** Understand the execution of algorithms like sorting, searching, and traversal.
-- **Interactive:** Step-by-step visualization for better understanding.
-- **Chatbot Integration:** Use a chatbot to generate explanations and help users understand concepts.
-- **Code Compiler/Playground:** Write, run, and test code snippets directly in the browser.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature-name`)
-5. Create a pull request
-
-## Preview
-- Click this link to preview the page https://UDDITwork.github.io/DSA_Visualizer/
-
-## Developers
-
-Developed by:
-Uddit
-2021umt1791@mnit.ac.in
-udditalerts247@gmail.com
-
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+![DSA Animation](https://media.giphy.com/media/l3vR1yV4PA3XxhRfy/giphy.gif)
 
 ---
 
-For more details, visit the [DSA Visualizer GitHub page](https://github.com/UDDITwork/DSA_Visualizer).
+## 🚀 Features
+
+- 📌 **Data Structures Visualization**: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, etc.
+- 🏆 **Algorithm Execution**: Sorting, Searching, and Traversal with step-by-step representation.
+- 🎨 **Interactive Interface**: User-friendly UI for enhanced learning.
+- 🤖 **AI-Powered Chatbot**: Provides explanations for data structures and algorithms.
+- 💻 **Code Playground**: Write, run, and test code snippets directly in the browser.
+
+---
+
+## 📌 Installation 🔧
+
+Follow these steps to set up the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/UDDITwork/DSA_Visualizer.git
+
+# Navigate to the project directory
+cd DSA_Visualizer
+
+# Install dependencies
+npm install express @google/generative-ai
+
+# Open `server.js` and paste Google Generative AI API Key
+
+# Start the server
+node ./Chatbot/Server/server.js
+
+# Open `form.html` in a browser and start exploring 🚀
+```
+
+---
+
+## 🎯 Usage 🎭
+
+1. **Explore Data Structures & Algorithms**: Step-by-step visualization. 📈
+2. **Use AI Chatbot**: Generate text-based explanations for concepts. 🤖
+3. **Run Code**: Utilize the built-in compiler and playground. 💡
+
+![Algorithm Visualization](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
+
+---
+
+## 🌟 Preview 🔍
+
+🔗 [Live Demo](https://UDDITwork.github.io/DSA_Visualizer/)
+
+---
+
+## 💡 Contributing 🤝
+
+Contributions are welcome! Follow these steps:
+
+```bash
+# Fork the repository
+# Create a new branch
+git checkout -b feature/your-feature-name
+
+# Commit your changes
+git commit -m 'Add new feature'
+
+# Push to the branch
+git push origin feature/your-feature-name
+
+# Open a Pull Request
+```
+
+---
+
+## 👨‍💻 Developers 🛠
+
+Developed by: **Uddit**  
+📧 [Email](mailto:2021umt1791@mnit.ac.in)  
+📞 [Call](tel:+917456868677)  
+🔗 [GitHub](https://github.com/UDDITwork) | [LinkedIn](https://linkedin.com/in/lorduddit) | [Instagram](https://instagram.com/lorduddit)
+
+![Coding GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+
+---
+
+## 📜 License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+For more details, visit the [GitHub Repository](https://github.com/UDDITwork/DSA_Visualizer).
