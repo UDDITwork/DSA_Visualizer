@@ -1,94 +1,88 @@
-# DSA Visualizer 🚀📊
+# Mission Tracker Pro 🎯
 
-DSA Visualizer is a web application designed to help users visualize data structures and algorithms interactively. It provides step-by-step execution of algorithms, a chatbot for text generation, and a playground for running and compiling code.
+A dynamic web application for tracking mission progress with automated email notifications 📈
 
-![DSA Animation](https://media.giphy.com/media/l3vR1yV4PA3XxhRfy/giphy.gif)
+![Mission Progress](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd6Y3l1cTFxNG13MWF4bXgzOXJ1OWRxbDY4Z2VyY2JwdmpqNm8ybiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JWuBH9rCO2uZuHBFpm/giphy.gif)
 
----
+## ✨ Features
 
-## 🚀 Features
+### Mission Management 📋
+- Create missions with custom titles
+- Add/Delete targets dynamically
+- Finalize missions with stunning animations
+- Track multiple missions simultaneously
 
-- 📌 **Data Structures Visualization**: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, etc.
-- 🏆 **Algorithm Execution**: Sorting, Searching, and Traversal with step-by-step representation.
-- 🎨 **Interactive Interface**: User-friendly UI for enhanced learning.
-- 🤖 **AI-Powered Chatbot**: Provides explanations for data structures and algorithms.
-- 💻 **Code Playground**: Write, run, and test code snippets directly in the browser.
+### Progress Tracking 📊
+- Real-time progress updates
+- Visual progress bars
+- Mark targets as complete
+- Automatic progress calculation
 
----
+### Smart Notifications 📬
+- Automated email updates every 2 hours
+- Detailed progress reports
+- Multi-recipient notifications
+- Motivational messages
 
-## 📌 Installation 🔧
+## 🛠️ Tech Stack
 
-Follow these steps to set up the project locally:
+- **Frontend**: React + Tailwind CSS + Framer Motion
+- **Backend**: Node.js + Express
+- **Database**: PostgreSQL
+- **Deployment**: Railway Platform
+
+## 🚀 Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/UDDITwork/DSA_Visualizer.git
-
-# Navigate to the project directory
-cd DSA_Visualizer
+# Clone repository
+git clone https://github.com/UDDITwork/mission-tracker.git
 
 # Install dependencies
-npm install express @google/generative-ai
+cd mission-tracker
+npm install
 
-# Open `server.js` and paste Google Generative AI API Key
+# Configure environment variables
+cp .env.example .env
+# Update .env with your credentials
 
-# Start the server
-node ./Chatbot/Server/server.js
-
-# Open `form.html` in a browser and start exploring 🚀
+# Start development servers
+npm run dev
 ```
 
----
+## 💻 Environment Setup
 
-## 🎯 Usage 🎭
-
-1. **Explore Data Structures & Algorithms**: Step-by-step visualization. 📈
-2. **Use AI Chatbot**: Generate text-based explanations for concepts. 🤖
-3. **Run Code**: Utilize the built-in compiler and playground. 💡
-
-![Algorithm Visualization](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
-
----
-
-## 🌟 Preview 🔍
-
-🔗 [Live Demo](https://UDDITwork.github.io/DSA_Visualizer/)
-
----
-
-## 💡 Contributing 🤝
-
-Contributions are welcome! Follow these steps:
-
-```bash
-# Fork the repository
-# Create a new branch
-git checkout -b feature/your-feature-name
-
-# Commit your changes
-git commit -m 'Add new feature'
-
-# Push to the branch
-git push origin feature/your-feature-name
-
-# Open a Pull Request
+```env
+DATABASE_URL=your_postgresql_url
+EMAIL_USER=your_email
+EMAIL_PASS=your_app_password
+PORT=8080
 ```
 
----
+## 📱 Screenshots
 
-## 👨‍💻 Developers 🛠
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd6Y3l1cTFxNG13MWF4bXgzOXJ1OWRxbDY4Z2VyY2JwdmpqNm8ybiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JWuBH9rCO2uZuHBFpm/giphy.gif" alt="Mission Creation" width="400"/>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXR2MW52M2t1Y3Zlb2ttZzQ5MmZ5ZHd6ZnBnYnB0YmxkcGdwb2YzbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" alt="Progress Tracking" width="400"/>
+</div>
 
-Developed by: **Uddit**  
-📧 [Email](mailto:2021umt1791@mnit.ac.in)  
-📞 [Call](tel:+917456868677)  
-🔗 [GitHub](https://github.com/UDDITwork) | [LinkedIn](https://linkedin.com/in/lorduddit) | [Instagram](https://instagram.com/lorduddit)
+## 👨‍💻 Developer
 
-![Coding GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/97666287" width="100px;" alt="Developer"/>
+  <br />
+  <b>Uddit</b>
+  <br />
+  <a href="https://github.com/UDDITwork/PORTFOLIO-Uddit/">Portfolio</a> •
+  <a href="mailto:2021umt1791@mnit.ac.in">Email</a> •
+  <a href="tel:+917456868677">Contact</a>
+</div>
 
----
+## 📫 Connect
 
-## 📜 License 📄
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UDDITwork)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lorduddit)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/lorduddit)
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## 📄 License
 
-For more details, visit the [GitHub Repository](https://github.com/UDDITwork/DSA_Visualizer).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
